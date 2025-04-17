@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Sofia's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1529697216570-f48ef8f6b2dd?q=80&w=2070');
+      background-size: cover;
+      background-position: center;
+      color: #4a148c;
+      min-height: 100vh;
+      backdrop-filter: brightness(95%) saturate(110%);
+    }
+
+    .navbar {
+      background: linear-gradient(45deg, #f8bbd0, #f48fb1);
+    }
+
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover {
+      color: #fffde7 !important;
+    }
+
+    .text-pink {
+      color: #d81b60;
+    }
+
+    .btn-pink {
+      background-color: #f48fb1;
+      color: white;
+      border: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-pink:hover {
+      background-color: #ec407a;
+    }
+
+    .bg-overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .img-profile {
+      max-width: 280px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .img-profile:hover {
+      transform: scale(1.05);
+    }
+
+    .bi:hover {
+      transform: scale(1.2);
+      transition: transform 0.2s;
+    }
+
+    footer {
+      background: linear-gradient(45deg, #f48fb1, #f06292);
+      color: white;
+    }
+
+    .nav-link.active {
+      color: #fffde7 !important;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Sofia's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5 flex-grow-1">
+    <div class="bg-overlay">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="text-pink fw-bold">Hi, I'm Sofia Azahra 💕</h1>
+          <p class="lead">Web designer & developer who crafts beautiful, functional websites with a sprinkle of love and creativity.</p>
+          <a href="projects.html" class="btn btn-pink mt-3">My Projects</a>
+        </div>
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+          <img src="profil.jpeg" alt="Profile Photo" class="img-fluid img-profile">
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="bg-overlay mt-5">
+      <h2 class="text-pink text-center mb-4">About Me</h2>
+      <p class="lead text-center">I am a passionate web developer and designer with a love for creating responsive, user-friendly websites. I specialize in frontend development using modern technologies like HTML, CSS, JavaScript, and React. Whether it's a personal website or a complex web application, I'm always excited to bring new ideas to life.</p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="bg-overlay mt-5">
+      <h2 class="text-pink text-center mb-4">My Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h4>HTML</h4>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4>CSS</h4>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4>JavaScript</h4>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" style="width: 80%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Projects -->
+    <div class="bg-overlay mt-5">
+      <h2 class="text-pink text-center mb-4">Featured Projects</h2>
+      <div class="row text-center">
+
+        <div class="col-md-4 mb-3">
+          <i class="bi bi-code-slash text-pink" style="font-size: 2rem;"></i>
+          <h5 class="mt-2">Project 1</h5>
+          <p>A beautiful and functional website built with modern web technologies.</p>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <i class="bi bi-laptop text-pink" style="font-size: 2rem;"></i>
+          <h5 class="mt-2">Project 2</h5>
+          <p>A fully responsive e-commerce website designed for seamless shopping.</p>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <i class="bi bi-kanban text-pink" style="font-size: 2rem;"></i>
+          <h5 class="mt-2">Project 3</h5>
+          <p>An interactive web application that allows users to manage tasks efficiently.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Call to Action -->
+  <div class="text-center mt-5">
+    <a href="contact.html" class="btn btn-pink">Let's Work Together</a>
+  </div>
+
+  <!-- Social Media Icons -->
+  <div class="text-center mb-5">
+    <a href="https://github.com/yourusername" class="text-pink mx-3" target="_blank" title="GitHub">
+      <i class="bi bi-github" style="font-size: 2rem;"></i>
+    </a>
+    <a href="https://linkedin.com/in/yourusername" class="text-pink mx-3" target="_blank" title="LinkedIn">
+      <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
+    </a>
+    <a href="https://instagram.com/fiizzhr_" class="text-pink mx-3" target="_blank" title="Instagram">
+      <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+    </a>
+    <a href="https://twitter.com/yourusername" class="text-pink mx-2" target="_blank" title="Twitter">
+      <i class="bi bi-twitter" style="font-size: 2rem;"></i>
+    </a>
+    <a href="https://tiktok.com/@yourusername" class="text-pink mx-2" target="_blank" title="TikTok">
+      <i class="bi bi-tiktok" style="font-size: 2rem;"></i>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 mt-auto">
+    &copy; 2025 Sofia Azahra. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
